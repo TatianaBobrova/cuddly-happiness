@@ -4,19 +4,37 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Calculator {
-    public static void main(String[]args) {
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Number x: ");
-        int x = in.nextInt();
+        int x = scanner.nextInt();
         System.out.print("Number y: ");
-        int y = in.nextInt();
-        int plus = x+y;
-        int minus = x-y;
-        int multiply = x*y;
-        int divide = x/y;
-        System.out.printf("Result: plus = %d; minus = %d; multiply = %d; divide = %d", plus, minus, multiply, divide);
-        in.close();
-
+        int y = scanner.nextInt();
+        System.out.print("Operation: ");
+        int Operation = scanner.nextInt();
+        /*if (Operation == 1) {
+            System.out.println("+");
+        } else if (Operation == 2) {
+            System.out.println("-");
+        } else if (Operation == 3) {
+            System.out.println("*");
+        } else if (Operation == 4) {
+            System.out.println("/");
+        }*/
+        int Result;
+        switch (Operation) {
+            case 1:
+                System.out.printf("Result: %d", x+y);
+                break;
+            case 2:
+                System.out.printf("Result: %d", x-y);
+                break;
+            case 3:
+                System.out.printf("Result: %d", x*y);
+                break;
+            case 4:
+                System.out.printf("Result: %d",x/y);
+                break;
+        }
     }
-
 }
