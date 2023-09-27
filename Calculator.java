@@ -12,7 +12,7 @@ public class Calculator {
         int y = scanner.nextInt();
         System.out.print("Operation: ");
         int Operation = scanner.nextInt();
-        /*if (Operation == 1) {
+        if (Operation == 1) {
             System.out.println("+");
         } else if (Operation == 2) {
             System.out.println("-");
@@ -20,7 +20,7 @@ public class Calculator {
             System.out.println("*");
         } else if (Operation == 4) {
             System.out.println("/");
-        }*/
+        }
         int Result;
         switch (Operation) {
             case 1:
