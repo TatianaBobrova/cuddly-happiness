@@ -1,5 +1,4 @@
 package p3;
-
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -7,7 +6,7 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Calculator colc = new Calculator();
-        String close = "no";
+        String close = "yas";
         do {
             System.out.print("Number x: ");
             int x = scanner.nextInt();
@@ -30,11 +29,10 @@ public class Calculator {
                     break;
                 default:
                     System.out.println("Error \n");
-                    close = scanner.next();
-
             }
-
-        }while (!close.equals("yas"));
+            System.out.println("Repeat: yas / no");
+            close = scanner.next();
+        }while (!close.equals("no"));
 
     }
 }
