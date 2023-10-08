@@ -35,7 +35,7 @@ public class calculator2 {
         }while (!close.equals("2"));*/
 
         //метод while (true)
-       /String c = "1";
+        String c = "1";
         while (true){
         System.out.print("Введите первое число: ");
         int num1 = in.nextInt();
@@ -62,8 +62,8 @@ public class calculator2 {
                 System.exit(0);
             default:
                 System.out.println("Ошибка \n");
-        }
+            }
             c = in.next();
         } if (c.equals("2")) break ;
-        }
     }
+}
